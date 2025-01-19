@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terre Verte - Agroforesterie Durable</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <link href = "typewriter/typewriter.css" rel = "stylesheet">
 </head>
 <body>
     <header class="header">
@@ -25,20 +25,34 @@
     <!-- Présentation rapide -->
     <section class="present">
         <div class="container">
-            <p>Together for a better future</p>
-            <p>Une Mission en Agroforesterie pour la Guinée Conakry</p>
-            <p>Nous travaillons pour un avenir durable en inspirant des changements positifs.</p>
-            <button ><a href="about.html" class="btn">En savoir plus</a></button>
+            <div id="app"></div>
+            <div class="cta-container">
+              <a href="about.html" class="btn">En savoir plus</a>
+          </div>
         </div>
     </section>
 
         <section class="banner">
-            <div class="slideshow">
-                <img src="13.png" alt="Agroforesterie">
-                <img src="14.png" alt="Environnement">
-                <img src="15.png" alt="Développement Durable">
-                <img src="16.png" alt="Environnement">
-                <img src="11.png" alt="Développement Durable">
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="13.png" alt="Agroforesterie">
+                </div>
+                <div class="mySlides fade">
+                    <img src="14.png" alt="Environnement">
+                </div>
+                <div class="mySlides fade">
+                    <img src="15.png" alt="Développement Durable">
+                </div>
+                <div class="mySlides fade">
+                    <img src="16.png" alt="Environnement">
+                </div>
+                <div class="mySlides fade">
+                    <img src="11.png" alt="Développement Durable">
+                </div>
             </div>
         </section>
 
@@ -82,66 +96,65 @@
         </div>
     </section>
 
-        <section class="services-agroforesterie">
-            <h2 class="section-title">Nos Services en Agroforesterie</h2>
-            <div class="container">
-              
-              <div class="row">
-                <div class="col-12 col-md-3 service-item">
-                  <img src="1.png" alt="Service 1" class="service-image">
-                  <h3 class="service-title">Gestion Durable des Forêts</h3>
-                  <p class="service-description">Optimisation des ressources forestières tout en préservant l'écosystème.</p>
-                </div>
-                <div class="col-12 col-md-3 service-item">
-                  <img src="2.png" alt="Service 2" class="service-image">
-                  <h3 class="service-title">Plantation d'Arbres Fructifères</h3>
-                  <p class="service-description">Augmenter la biodiversité et la productivité des sols par des arbres fruitiers.</p>
-                </div>
-                <div class="col-12 col-md-3 service-item">
-                  <img src="3.png" alt="Service 3" class="service-image">
-                  <h3 class="service-title">Formation en Techniques Agroforestières</h3>
-                  <p class="service-description">Apprentissage des meilleures pratiques pour combiner agriculture et foresterie.</p>
-                </div>
-                <div class="col-12 col-md-3 service-item">
-                  <img src="4.png" alt="Service 4" class="service-image">
-                  <h3 class="service-title">Conservation des Sols</h3>
-                  <p class="service-description">Protection et amélioration de la qualité des sols agricoles grâce à l'agroforesterie.</p>
-                </div>
-                <div class="col-12 col-md-3 service-item">
-                  <img src="5.png" alt="Service 5" class="service-image">
-                  <h3 class="service-title">Agroforesterie et Élevage</h3>
-                  <p class="service-description">Intégration des pratiques agroforestières dans les systèmes d'élevage pour une production durable.</p>
-                </div>
-                <div class="col-12 col-md-3 service-item">
-                  <img src="6.png" alt="Service 6" class="service-image">
-                  <h3 class="service-title">Restauration Écologique</h3>
-                  <p class="service-description">Réhabilitation des zones dégradées par la plantation d'arbres et la régénération naturelle.</p>
-                </div>
-                <div class="col-12 col-md-3 service-item">
-                  <img src="7.png" alt="Service 7" class="service-image">
-                  <h3 class="service-title">Gestion de l'Eau</h3>
-                  <p class="service-description">Gestion intégrée des ressources en eau pour favoriser l'agriculture durable.</p>
-                </div>
-                <div class="col-12 col-md-3 service-item">
-                  <img src="8.png" alt="Service 8" class="service-image">
-                  <h3 class="service-title">Éducation et Sensibilisation</h3>
-                  <p class="service-description">Programmes éducatifs pour sensibiliser à l'importance de l'agroforesterie.</p>
-                </div>
-                <div class="col-12 col-md-3 service-item">
-                  <img src="9.png" alt="Service 9" class="service-image">
-                  <h3 class="service-title">Valorisation des Produits Forestiers Non-Ligneux</h3>
-                  <p class="service-description">Exploitation durable des produits forestiers non ligneux (miel, plantes médicinales, etc.).</p>
-                </div>
-                <div class="col-12 col-md-3 service-item">
-                  <img src="10.png" alt="Service 10" class="service-image">
-                  <h3 class="service-title">Partenariats pour le Développement Durable</h3>
-                  <p class="service-description">Collaboration avec des acteurs locaux et internationaux pour le développement durable.</p>
-                </div>
-              </div>
-            </div>
-
-            <button ><a href="services.html" class="btn">En savoir plus</a></button>
-          </section>        
+    <section class="services-agroforesterie"> 
+      <h2 class="section-title">Nos Services en Agroforesterie</h2>
+      <div class="services-grid">
+          <div class="service-item">
+              <img src="1.png" alt="Service 1" class="service-image">
+              <h3 class="service-title">Gestion Durable des Forêts</h3>
+              <p class="service-description">Optimisation des ressources forestières tout en préservant l'écosystème.</p>
+          </div>
+          <div class="service-item">
+              <img src="2.png" alt="Service 2" class="service-image">
+              <h3 class="service-title">Plantation d'Arbres Fructifères</h3>
+              <p class="service-description">Augmenter la biodiversité et la productivité des sols par des arbres fruitiers.</p>
+          </div>
+          <div class="service-item">
+              <img src="3.png" alt="Service 3" class="service-image">
+              <h3 class="service-title">Formation en Techniques Agroforestières</h3>
+              <p class="service-description">Apprentissage des meilleures pratiques pour combiner agriculture et foresterie.</p>
+          </div>
+          <div class="service-item">
+              <img src="4.png" alt="Service 4" class="service-image">
+              <h3 class="service-title">Conservation des Sols</h3>
+              <p class="service-description">Protection et amélioration de la qualité des sols agricoles grâce à l'agroforesterie.</p>
+          </div>
+          <div class="service-item">
+              <img src="5.png" alt="Service 5" class="service-image">
+              <h3 class="service-title">Agroforesterie et Élevage</h3>
+              <p class="service-description">Intégration des pratiques agroforestières dans les systèmes d'élevage pour une production durable.</p>
+          </div>
+          <div class="service-item">
+              <img src="6.png" alt="Service 6" class="service-image">
+              <h3 class="service-title">Restauration Écologique</h3>
+              <p class="service-description">Réhabilitation des zones dégradées par la plantation d'arbres et la régénération naturelle.</p>
+          </div>
+          <div class="service-item">
+              <img src="7.png" alt="Service 7" class="service-image">
+              <h3 class="service-title">Gestion de l'Eau</h3>
+              <p class="service-description">Gestion intégrée des ressources en eau pour favoriser l'agriculture durable.</p>
+          </div>
+          <div class="service-item">
+              <img src="8.png" alt="Service 8" class="service-image">
+              <h3 class="service-title">Éducation et Sensibilisation</h3>
+              <p class="service-description">Programmes éducatifs pour sensibiliser à l'importance de l'agroforesterie.</p>
+          </div>
+          <div class="service-item">
+              <img src="9.png" alt="Service 9" class="service-image">
+              <h3 class="service-title">Valorisation des Produits Forestiers Non-Ligneux</h3>
+              <p class="service-description">Exploitation durable des produits forestiers non ligneux (miel, plantes médicinales, etc.).</p>
+          </div>
+          <div class="service-item">
+              <img src="10.png" alt="Service 10" class="service-image">
+              <h3 class="service-title">Partenariats pour le Développement Durable</h3>
+              <p class="service-description">Collaboration avec des acteurs locaux et internationaux pour le développement durable.</p>
+          </div>
+      </div>
+      <div class="cta-container">
+          <a href="services.html" class="btn">En savoir plus</a>
+      </div>
+  </section>
+          
     </main>
     <form class="newsletter">
         <label for="email">Inscrivez-vous à notre Newsletter :</label>
@@ -159,5 +172,24 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+
+        typewriter.typeString('Together for a better future')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Une Mission en Agroforesterie pour la Guinée Conakry')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Nous travaillons pour un avenir durable en inspirant des changements positifs.')
+    .pauseFor(2500)
+    .start();
+    </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #fff;
-    background: linear-gradient(135deg, #7a5f36,  #7e672e);
+    background: linear-gradient(135deg, #eff1f3, #9e8969);
     overflow-x: hidden;
 }
 
@@ -101,30 +101,28 @@ header {
     }
 }
 
-/* Updated slideshow */
-.slideshow {
-    display: flex;
-    overflow: hidden;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
     position: relative;
-    height: 400px;
-}
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
 
-.slide {
-    min-width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    animation: fadeSlide 12s infinite;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-}
-
-@keyframes fadeSlide {
-    0%, 100% { opacity: 1; }
-    25% { opacity: 0; }
-    50% { opacity: 0; }
-    75% { opacity: 1; }
-}
-
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 /* Contact Form */
 .contact-form {
@@ -260,73 +258,82 @@ header {
 }
 
 
+/* Section Global */
 .services-agroforesterie {
-
-    padding: 40px 0;
-}
-
-.services-agroforesterie .section-title {
+    padding: 2rem;
+    color: #fff;
     text-align: center;
-    font-size: 2rem;
-    color: #03a9f4;
-    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    
-    justify-content: center;
-    margin: 0 auto;
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffeb3b;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.col-md-3 {
-    flex: 0 0 23%;
-    max-width: 23%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+/* Grid Styling */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
 }
 
 .service-item {
     background: linear-gradient(45deg, #013009, #0f9b0f, #013009);
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 1.5rem;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .service-item:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 235, 59, 0.3);
 }
 
 .service-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    max-width: 100px;
+    margin-bottom: 1rem;
 }
 
 .service-title {
     font-size: 1.2rem;
-    color: #03a9f4;
-    margin-top: 15px;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    color: #ffeb3b;
 }
 
 .service-description {
-    color: #f5f1f1;
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #e3f2fd;
 }
+
+/* Call-to-Action Button */
+.cta-container {
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #0d47a1;
+    background: #ffeb3b;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #fbc02d;
+    transform: translateY(-3px);
+}
+
 
 
 /* Mission section */
@@ -400,3 +407,197 @@ section.team h2 {
     font-size: 1rem;
     color: #fcf8f8;
 }
+
+/* CSS futuriste pour la section .present */
+.present {
+    background: linear-gradient(135deg, #eff1f3, #9e8969);
+    color: #0a0707;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.present .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.present p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.present button {
+    background: linear-gradient(135deg, #1d8cf8, #3498db);
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.present button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #3498db, #1d8cf8);
+}
+
+.present button a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .present {
+        padding: 30px 15px;
+    }
+
+    .present p {
+        font-size: 1.2rem;
+    }
+
+    .present button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* CSS futuriste pour la section .features */
+.features {
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00d4ff;
+}
+
+.features .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.features .feature-item {
+    background: linear-gradient(45deg, #013009, #0f9b0f, #013009);
+    padding: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.features .feature-item:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #2e2e2e, #444444);
+}
+
+.features .feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00d4ff;
+    position: relative;
+}
+
+.features .feature-item h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #00d4ff;
+    margin: 10px 0 0;
+    transition: width 0.3s ease;
+}
+
+.features .feature-item:hover h3::after {
+    width: 100%;
+}
+
+.features .feature-item p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.features .feature-item:hover p {
+    color: #ffffff;
+}
+
+.features .feature-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.15), transparent);
+    transform: rotate(45deg);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.features .feature-item:hover::before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .features {
+        padding: 40px 15px;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+    }
+
+    .features .feature-item {
+        padding: 20px;
+    }
+
+    .features .feature-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .features .feature-item p {
+        font-size: 0.9rem;
+    }
+}
+
+.app {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
