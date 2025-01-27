@@ -4,7 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - Terre Verte</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylese.css">
+    <style>
+        /* styles.css */
+
+
+
+.video-banner {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 50%; /* Réduit la hauteur à 50% */
+}
+
+.video-banner iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ajuste la hauteur à 100% pour remplir le conteneur */
+    aspect-ratio: 16/9;
+}
+
+.mission {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.mission-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.mission-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mission-text p {
+    line-height: 1.8;
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-image .image-description {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+.team {
+    background-color: #d2b48c; /* Couleur de la terre */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    margin-bottom: 1rem;
+}
+
+.team-member button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.team-member button:hover {
+    background-color: #218838;
+}
+
+.footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.socials {
+    margin-bottom: 1rem;
+}
+
+.socials a {
+    margin: 0 0.5rem;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .toggle-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #28a745;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .menu a {
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .mission-content {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+    </style>
 </head>
 <body>
     <header class="header">
@@ -19,80 +192,85 @@
             </ul>
         </nav>
     </header>
-    
     <main>
         <section class="video-banner">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" autoplay muted></iframe>
+            <iframe src="https://www.youtube.com/embed/qIOnpi7WhFM" autoplay muted></iframe>
         </section>
-
-            <!-- Mission et Vision -->
+        <!-- Mission et Vision -->
+        <h1>À propos de GAF Guinéenne d'AggroForesterie</h1>
+        
         <section class="mission">
-            <h1>À propos de GAF Guinéenne d'AggroForesterie</h1>
+            <div class="container">
+                <div class="mission-content">
+                    <div class="mission-text">
+                        <h2>Notre Mission</h2>
+<p>
+    "Inspirer un changement environnemental positif grâce à l'éducation et à l'innovation."  
+    GAF s'engage à intégrer des pratiques modernes et durables dans les secteurs agricoles et forestiers de la Guinée Conakry.  
+    <strong>Notre mission repose sur trois piliers fondamentaux :</strong><br>
+    <strong>Éducation environnementale :</strong> Sensibiliser les communautés locales à l'importance de l'agroforesterie pour une gestion durable des terres.<br>
+    <strong>Innovation :</strong> Appliquer des technologies modernes pour maximiser les rendements agricoles tout en préservant les écosystèmes.<br>
+    <strong>Engagement communautaire :</strong> Renforcer les capacités locales pour que les populations deviennent les acteurs principaux de la conservation et de la reforestation.<br><br>
+    <strong>Qu'est-ce que l'Agroforesterie ?</strong><br>
+    L'agroforesterie est une méthode durable qui combine :<br>
+    <strong>L’agriculture :</strong> La production de cultures vivrières et commerciales.<br>
+    <strong>La foresterie :</strong> La plantation et la gestion des arbres pour améliorer les terres.<br>
+    <strong>Cette approche permet de :</strong><br>
+    - Réduire l’érosion des sols.<br>
+    - Séquestrer le carbone et réduire les émissions de gaz à effet de serre.<br>
+    - Créer des écosystèmes résilients et équilibrés.<br>
+    - Accroître la productivité agricole grâce à des synergies entre arbres et cultures.<br><br>
+    GAF est plus qu'une entreprise ; c'est un mouvement pour le changement environnemental et social en Guinée Conakry.  
+    Avec GAF, la Guinée Conakry devient un modèle de durabilité et de résilience environnementale en Afrique.
+</p>
 
-        <div class="container">
-
-            <h2>Notre Mission</h2>
-            <p>"Inspirer un changement environnemental positif grâce à l'éducation et à l'innovation."
-                GAF s'engage à intégrer des pratiques modernes et durables dans les secteurs agricoles et forestiers de la Guinée Conakry. Notre mission repose sur trois piliers fondamentaux :
-                <br>
-                Éducation environnementale : Sensibiliser les communautés locales à l'importance de l'agroforesterie pour une gestion durable des terres.
-                <br>Innovation : Appliquer des technologies modernes pour maximiser les rendements agricoles tout en préservant les écosystèmes.
-                <br>Engagement communautaire : Renforcer les capacités locales pour que les populations deviennent les acteurs principaux de la conservation et de la reforestation.
-                <br>
-                Qu'est-ce que l'Agroforesterie ?
-                L'agroforesterie est une méthode durable qui combine :
-                
-                L'agriculture : La production de cultures vivrières et commerciales.
-                La foresterie : La plantation et la gestion des arbres pour améliorer les terres.
-                Cette approche permet de :
-                
-                Réduire l'érosion des sols.
-                Séquestrer le carbone et réduire les émissions de gaz à effet de serre.
-                Créer des écosystèmes résilients et équilibrés.
-                Accroître la productivité agricole grâce à des synergies entre les arbres et les cultures.
-            
-                <br>GAF est plus qu'une entreprise ; c'est un mouvement pour le changement environnemental et social en
-                 Guinée Conakry. Par l'éducation, l'innovation et l'engagement communautaire, nous posons les bases d'une agroforesterie moderne et durable, 
-                essentielle à l'équilibre écologique et au développement économique du pays.
-
-                <br>Avec GAF, la Guinée Conakry devient un modèle de durabilité et de résilience environnementale en Afrique.
-            </p>
-
-        </div>
-    </section>
-
-    <!-- Équipe -->
-    <section class="team">
-        <div class="container">
-            <h2>Notre Équipe</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="32.jpg" alt="Service 10" class="service-image">
-                    <h3>Daouda CAMARA </h3>
-                    <p>Fondateur PDG</p>
-                    <button><a href="services.html" class="btn">En savoir plus</a></button>
-                </div>
-                <div class="team-member">
-                    <img src="59.jpg" alt="Service 10" class="service-image">
-                    <h3>Ousmane Yattara</h3>
-                    <p>Responsable Communication</p>
-                    <button ><a href="services.html" class="btn">En savoir plus</a></button>
+                    </div>
+                    <div class="mission-image">
+                        <img src="images/1.png" alt="Agroforesterie en Guinée Conakry" width="650px" height="650px">
+                        <p class="image-description">L'agroforesterie en action en Guinée Conakry : une méthode durable pour un avenir meilleur.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-        
+        </section>
+        <!-- Équipe -->
+        <section class="team">
+            <div class="container">
+                <h2>Notre Équipe</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="32.jpg" alt="Service 10" class="service-image">
+                        <h3>Daouda CAMARA </h3>
+                        <p>Fondateur PDG</p>
+                        <button><a href="services.html" class="btn">En savoir plus</a></button>
+                    </div>
+                    <div class="team-member">
+                        <img src="59.jpg" alt="Service 10" class="service-image">
+                        <h3>Ousmane Yattara</h3>
+                        <p>Responsable Communication</p>
+                        <button ><a href="services.html" class="btn">En savoir plus</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer class="footer">
         <div class="socials">
             <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
             <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
             <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
         </div>
-        <p>&copy; 2025 Terre Verte. Tous droits réservés.</p>
+        <p>&copy; 2025 Terre Verte. Par YATTARA Ousmane Tous droits réservés.</p>
     </footer>
     <script src="scripts.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // scripts.js
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+    </script>
 </body>
 </html>
