@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #28a745; /* Vert de l'agroforesterie */
+    background: linear-gradient(45deg, #013009, #0f9b0f, #013009); /* Vert de l'agroforesterie */
     color: white;
     padding: 1rem 0;
     display: flex;
@@ -79,7 +79,7 @@ header {
 }
 
 .btn {
-    background-color: #28a745;
+    background: linear-gradient(45deg, #013009, #0f9b0f, #013009);
     color: white;
     padding: 0.5rem 1rem;
     text-decoration: none;
@@ -90,6 +90,30 @@ header {
 .btn:hover {
     background-color: #218838;
 }
+
+.app {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
 
 .banner {
     background-color: #d2b48c; /* Couleur de la terre */
@@ -177,42 +201,64 @@ header {
     margin-top: 0.5rem;
 }
 
+/* Newsletter Form */
 .newsletter {
-    background-color: #28a745;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #013009, #0f9b0f, #013009);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
 
-.newsletter label {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    display: block;
+.newsletter h2 {
+    text-align: center;
+    color: #f2f7fa;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 .newsletter input {
-    padding: 0.5rem;
-    border-radius: 5px;
+    width: calc(70% - 20px);
+    margin-right: 10px;
+    padding: 15px;
     border: none;
-    margin-right: 1rem;
+    border-radius: 5px;
+    background: #dddbd7;
+    color: #fff;
 }
 
 .newsletter button {
-    background-color: #fff;
-    color: #28a745;
-    padding: 0.5rem 1rem;
+    width: 30%;
+    padding: 15px;
     border: none;
     border-radius: 5px;
-    font-weight: bold;
+    background: #7a5f36;
+    color: #fff;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn {
+    width: 30%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #013009, #0f9b0f, #013009);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn button:hover {
+    background: #0288d1;
 }
 
 .newsletter button:hover {
-    background-color: #e0e0e0;
+    background: #0288d1;
 }
 
 .footer {
-    background-color: #28a745;
+    background: linear-gradient(45deg, #013009, #0f9b0f, #013009);
     color: white;
     text-align: center;
     padding: 1rem 0;
