@@ -1,0 +1,258 @@
+/* styles.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #28a745; /* Vert de l'agroforesterie */
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.present {
+    background-color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.cta-container {
+    margin-top: 1rem;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.banner {
+    background-color: #d2b48c; /* Couleur de la terre */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.features {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services-agroforesterie {
+    background-color: #d2b48c; /* Couleur de la terre */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.service-description {
+    margin-top: 0.5rem;
+}
+
+.newsletter {
+    background-color: #28a745;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.newsletter label {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 1rem;
+}
+
+.newsletter button {
+    background-color: #fff;
+    color: #28a745;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #e0e0e0;
+}
+
+.footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.socials {
+    margin-bottom: 1rem;
+}
+
+.socials a {
+    margin: 0 0.5rem;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .toggle-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #28a745;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .menu a {
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}

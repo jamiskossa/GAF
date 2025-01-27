@@ -1,14 +1,4 @@
-// Slideshow Automation
-let slideIndex = 0;
-function showSlides() {
-    const slides = document.querySelectorAll('.slide');
-    slides.forEach((slide, index) => {
-        slide.style.display = (index === slideIndex) ? 'block' : 'none';
-    });
-    slideIndex = (slideIndex + 1) % slides.length;
-    setTimeout(showSlides, 5000); // Change slide every 5 seconds
-}
-document.addEventListener('DOMContentLoaded', showSlides);
+
 
 // Smooth Scroll for Navigation Links
 document.querySelectorAll('nav a').forEach(link => {
@@ -35,8 +25,3 @@ if (contactForm) {
     });
 }
 
-// scripts.js
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('active');
-}
